@@ -1,0 +1,48 @@
+unit signatoriesPas;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.ExtCtrls, Vcl.DBCtrls, Data.DB,
+  Vcl.Grids, Vcl.DBGrids, Vcl.StdCtrls;
+
+type
+  TfrmSigna = class(TForm)
+    PanelTop: TPanel;
+    DBGrid1: TDBGrid;
+    Button1: TButton;
+    procedure FormKeyUp(Sender: TObject; var Key: Word; Shift: TShiftState);
+    procedure Button1Click(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  frmSigna: TfrmSigna;
+
+implementation
+
+{$R *.dfm}
+
+uses dmPas;
+
+procedure TfrmSigna.Button1Click(Sender: TObject);
+begin
+
+
+     frmDataMod.qSignatoryTbl.Edit;
+     frmDataMod.qSignatoryTbl.Post;
+
+end;
+
+procedure TfrmSigna.FormKeyUp(Sender: TObject; var Key: Word;
+  Shift: TShiftState);
+begin
+     if (key=27) then close;
+
+end;
+
+end.

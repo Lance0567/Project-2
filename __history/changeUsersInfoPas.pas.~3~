@@ -1,0 +1,33 @@
+unit changeUsersInfoPas;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls, Vcl.Mask, Vcl.ExtCtrls,
+  Vcl.DBCtrls;
+
+type
+  TfrmChangeInfo = class(TForm)
+    GroupBox1: TGroupBox;
+    DBEdit1: TDBEdit;
+    GroupBox3: TGroupBox;
+    DBEdit3: TDBEdit;
+    GroupBox2: TGroupBox;
+    DBEdit2: TDBEdit;
+    btOkay: TButton;
+    btCancel: TButton;
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  frmChangeInfo: TfrmChangeInfo;
+
+implementation
+
+{$R *.dfm}
+
+end.

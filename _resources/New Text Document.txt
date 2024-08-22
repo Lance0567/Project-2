@@ -1,0 +1,19 @@
+SystemStatus.Caption := 'System Offline';
+Login.enabled := true;
+Logout.enabled := false;
+UsersCredentials.enabled:= false;
+ChangeUsernamePassword.enabled:= false;
+Signatories.enabled:= false;
+GeolocationSettings.enabled:= false;
+DatabaseSettings.enabled:= false;
+EmployeesProfile.enabled:= false;
+
+frmMain.SystemStatus.Caption := 'System Status Online : Congratulation! ';
+frmMain.Login.enabled := false;
+frmMain.Logout.enabled:= true;
+frmMain.UsersCredentials.enabled:= true;
+frmMain.ChangeUsernamePassword.enabled:= true;
+frmMain.Signatories.enabled:= true;
+frmMain.GeolocationSettings.enabled:= true;
+frmMain.DatabaseSettings.enabled:= true;
+frmMain.EmployeesProfile.enabled:= true;

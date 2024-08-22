@@ -1,0 +1,20 @@
+object frmDDO: TfrmDDO
+  AlignWithMargins = True
+  Left = 0
+  Top = 0
+  BorderIcons = [biSystemMenu, biMaximize]
+  Caption = 'DUTY DETAIL ORDER'
+  ClientHeight = 580
+  ClientWidth = 1000
+  Color = clBtnFace
+  DoubleBuffered = True
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -12
+  Font.Name = 'Segoe UI'
+  Font.Style = []
+  KeyPreview = True
+  Position = poMainFormCenter
+  OnKeyUp = FormKeyUp
+  TextHeight = 15
+end

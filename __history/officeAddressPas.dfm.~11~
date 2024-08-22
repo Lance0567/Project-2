@@ -1,0 +1,61 @@
+object frmOffice: TfrmOffice
+  AlignWithMargins = True
+  Left = 0
+  Top = 0
+  Margins.Top = 10
+  BorderIcons = [biSystemMenu]
+  BorderStyle = bsDialog
+  Caption = 'OFFICE ADDRESS & CONTACT INFORMATION'
+  ClientHeight = 146
+  ClientWidth = 495
+  Color = clBtnFace
+  DoubleBuffered = True
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -12
+  Font.Name = 'Segoe UI'
+  Font.Style = []
+  KeyPreview = True
+  Position = poMainFormCenter
+  OnKeyUp = FormKeyUp
+  DesignSize = (
+    495
+    146)
+  TextHeight = 15
+  object fldAddress: TDBRichEdit
+    AlignWithMargins = True
+    Left = 3
+    Top = 10
+    Width = 489
+    Height = 103
+    Cursor = crHandPoint
+    Margins.Top = 10
+    Align = alTop
+    Alignment = taCenter
+    DataField = 'Address'
+    DataSource = frmDataMod.dAddressTbl
+    EditMargins.Left = 5
+    EditMargins.Right = 5
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -15
+    Font.Name = 'Segoe UI'
+    Font.Style = []
+    ScrollBars = ssVertical
+    TabOrder = 0
+    ExplicitWidth = 485
+  end
+  object btSave: TButton
+    Left = 413
+    Top = 119
+    Width = 75
+    Height = 25
+    Cursor = crHandPoint
+    Anchors = [akRight, akBottom]
+    Caption = 'SAVE'
+    TabOrder = 1
+    OnClick = btSaveClick
+    ExplicitLeft = 409
+    ExplicitTop = 118
+  end
+end
